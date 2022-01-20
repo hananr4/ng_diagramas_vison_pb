@@ -18,6 +18,7 @@
     "@angular/platform-browser": "~13.0.0",
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
+    "devexpress-diagram": "^2.1.40",
     "devextreme": "21.2.4",
     "devextreme-angular": "21.2.4",
     "rxjs": "~7.4.0",
