@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ver-diagrama-dx';
+  helloWorld(){
+    console.log('hola');
+  }
 }
