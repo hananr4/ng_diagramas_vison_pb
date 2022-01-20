@@ -1,1 +1,25 @@
-<dx-diagram #diagram id="diagram"> </dx-diagram>
+<dx-button text="Json" (onClick)="onClick()"> </dx-button>
+
+<dx-button text="Config" (onClick)="onConfig()"> </dx-button>
+<dx-diagram id="diagram" >
+    <dxo-auto-layout type="tree" orientation="horizontal"></dxo-auto-layout>
+</dx-diagram>
+
+<hr />
+{{ json }}
+
+
+<!-- 
+  <dxo-editing
+ 
+    [allowAdding]="false"
+    [allowAddShape]="false"
+    [allowChangeConnection]="false"
+    [allowDeleteShape]="false"
+    [allowDeleteConnector]="false"
+    [allowChangeShapeText]="false" 
+
+  ></dxo-editing>
+   <dxo-toolbox visibility="disabled"> </dxo-toolbox>
+
+-->

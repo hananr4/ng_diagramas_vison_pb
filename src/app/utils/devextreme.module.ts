@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
-import { DxDiagramModule } from 'devextreme-angular';
+import { DxButtonModule, DxDiagramModule } from 'devextreme-angular';
 
 
 
 @NgModule({
   exports: [
-    DxDiagramModule
+    DxDiagramModule,
+    DxButtonModule
   ]
 })
 export class DevextremeModule { }
