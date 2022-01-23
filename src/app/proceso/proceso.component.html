@@ -1,0 +1,10 @@
+<dx-diagram id="diagram" >
+    <dxo-nodes
+    [dataSource]="actividadesDatasource"
+    keyExpr="id"
+    textExpr="nombre"
+    [typeExpr]="getType"
+  >
+    <dxo-auto-layout type="tree"></dxo-auto-layout>
+  </dxo-nodes>
+</dx-diagram>
