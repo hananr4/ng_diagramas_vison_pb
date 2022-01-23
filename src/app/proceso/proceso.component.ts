@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Actividad } from '../model/Actividad';
 import ArrayStore from 'devextreme/data/array_store';
+import { Secuencia } from '../model/Secuencia';
 
 @Component({
   selector: 'app-proceso',
@@ -20,6 +21,11 @@ export class ProcesoComponent implements OnInit {
     data: [],
   });
 
+  secuencialesDatasource: ArrayStore = new ArrayStore({
+    key: 'id',
+    data: [],
+  });
+
   constructor(
     private router: ActivatedRoute
   ) {
@@ -33,6 +39,17 @@ export class ProcesoComponent implements OnInit {
           key: 'id',
           data: JSON.parse(params["actividades"]),
         });
+
+        var i: number = 0;
+        var secuenciales: Secuencia[] = JSON.parse(params["secuenciales"]);
+        secuenciales.forEach(s => {
+          s.id = (i++).toString();
+        });
+        this.secuencialesDatasource = new ArrayStore({
+          key: 'id',
+          data: secuenciales,
+        });
+
       });
   }
 

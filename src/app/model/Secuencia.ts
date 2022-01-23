@@ -5,6 +5,7 @@
 //   const secuencia = Convert.toSecuencia(json);
 
 export interface Secuencia {
+    id: string;
     id_actividad_desde?: string;
     id_actividad_hasta?: string;
     descripcion?:        null | string;

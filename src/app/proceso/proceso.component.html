@@ -1,5 +1,6 @@
-<dx-diagram id="diagram" >
-    <dxo-nodes
+<h1>v1</h1>
+<dx-diagram id="diagram">
+  <dxo-nodes
     [dataSource]="actividadesDatasource"
     keyExpr="id"
     textExpr="nombre"
@@ -7,4 +8,12 @@
   >
     <dxo-auto-layout type="tree"></dxo-auto-layout>
   </dxo-nodes>
+  <dxo-edges
+    [dataSource]="secuencialesDatasource"
+    keyExpr="id"
+    fromExpr="id_actividad_desde"
+    toExpr="id_actividad_hasta"
+    textExpr="descripcion"
+  ></dxo-edges>
+  <dxo-toolbox visibility="hidden"></dxo-toolbox>
 </dx-diagram>
