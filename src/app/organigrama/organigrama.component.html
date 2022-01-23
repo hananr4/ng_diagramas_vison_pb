@@ -1,0 +1,23 @@
+<dx-diagram #diagram id="diagram" units="cm" viewUnits="cm"
+ 
+>
+  <dxo-page-size 
+  [height]="29.7" 
+  [width]="21"
+  pageOrientation="landscape"
+  [items]='[{ text: "A4 (21cm x 29.7cm)", width: 21, height: 29.7 }]'>
+</dxo-page-size>
+
+  <dxo-nodes
+    [dataSource]="organigramaDatasource"
+    keyExpr="id"
+    textExpr="descripcion"
+    parentKeyExpr="id_superior"
+    [typeExpr]="getType"
+    [textStyleExpr]="getTextStyle"
+  >
+    <dxo-auto-layout type="tree"></dxo-auto-layout>
+  </dxo-nodes>
+
+  <dxo-toolbox visibility="hidden"> </dxo-toolbox>
+</dx-diagram>
