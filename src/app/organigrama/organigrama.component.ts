@@ -11,6 +11,10 @@ import { Organigrama } from '../model/Organigrama';
       #diagram {
         height: 900px;
       }
+
+      .prueba{
+        display:none;
+      }
     `
   ]
 })
