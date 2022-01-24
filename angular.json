@@ -29,7 +29,8 @@
             "styles": [
               "node_modules/devextreme/dist/css/dx.common.css",
               "node_modules/devextreme/dist/css/dx.light.css",
-              "node_modules/devexpress-diagram/dist/dx-diagram.css",
+              "node_modules/devexpress-diagram/dist/dx-diagram.css", 
+              "node_modules/devexpress-gantt/dist/dx-gantt.min.css",
               "src/styles.css"
             ],
             "scripts": []
