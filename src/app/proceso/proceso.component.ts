@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { Actividad } from '../model/Actividad';
+import { ActivatedRoute } from '@angular/router';
 import ArrayStore from 'devextreme/data/array_store';
+
+import { Actividad } from '../model/Actividad';
 import { Secuencia } from '../model/Secuencia';
 
 @Component({

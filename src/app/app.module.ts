@@ -7,14 +7,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProcesoComponent } from './proceso/proceso.component';
 import { OrganigramaComponent } from './organigrama/organigrama.component';
-import { GanttComponent } from './gantt/gantt.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProcesoComponent,
     OrganigramaComponent,
-    GanttComponent,
   ],
   imports: [
     BrowserModule,

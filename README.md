@@ -1,6 +1,29 @@
+
+# Ambiente de desarrollo:
+## 1. Levantamiento de servidor de desarrollo angular:
+    ng serve -o 
+
+http://localhost:4200/
+
+PowerBuilder no se pudo hacer accesible a este puerto
+
+## 2. Compilar cada vez que hay un cambio
+    ng build --watch
+
+## 3. Servidor independiente para integrar en desarrollo con PB
+
+        cd .\dist\ver-diagrama-dx\
+        lite-server 
+
+Generalmente abre el sitio:
+
+http://localhost:3000
+
+Este sitio si puede ser visto desde PB
+
 # VerDiagramaDx
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 13.0.3.
 
 ## Development server
 
