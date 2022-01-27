@@ -1,3 +1,5 @@
+# Relación con el proyecto:
+https://github.com/hananr4/pb_diagramas
 
 # Ambiente de desarrollo:
 ## 1. Levantamiento de servidor de desarrollo angular:
