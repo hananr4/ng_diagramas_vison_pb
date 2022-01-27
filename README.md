@@ -1,4 +1,4 @@
-# Relación con el proyecto:
+# Relación con el repositorio:
 https://github.com/hananr4/pb_diagramas
 
 # Ambiente de desarrollo:
